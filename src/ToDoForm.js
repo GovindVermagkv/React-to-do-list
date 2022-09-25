@@ -17,6 +17,7 @@ const ToDoForm = ({ addTask }) => {
         <form onSubmit={handleSubmit}>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..." className='input'/>
             <button className='submit'>Submit</button>
+            <p>for delete the data click on the task first</p>
         </form>
     );
 };

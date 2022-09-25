@@ -12,15 +12,22 @@ const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
                         
                     <ToDo todo={todo} handleToggle={handleToggle} handleFilter={handleFilter} />
                     <button className='edit'>Edit</button>
-                    <button className='delete'>Delete</button>
+                    {/* <button className='delete'>Delete</button> */}
+                    <button style={{margin: '20px'}} onClick={handleFilter} className="delete">Remove Marked Data</button>
                     </div>
                     
                     </>
                 )
             })}
-            {/* <button style={{margin: '20px'}} onClick={handleFilter}>Clear Completed</button> */}
+            {/* <button style={{margin: '20px'}} onClick={handleFilter}>Remove Marked Data</button> */}
         </div>
     );
+
+
 };
+
+
+
+
 
 export default ToDoList;
