@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css"
 
 const ToDo = ({todo, handleToggle}) => {
 
@@ -8,7 +9,7 @@ const ToDo = ({todo, handleToggle}) => {
     }
 
     return (
-        <div id={todo.id} key={todo.id + todo.task} name="todo" value={todo.id} onClick={handleClick} >
+        <div id={todo.id} key={todo.id + todo.task} name="todo" value={todo.id} onClick={handleClick}  className="namevalue">
             {todo.task}
         </div>
     );
